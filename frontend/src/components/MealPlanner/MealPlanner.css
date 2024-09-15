@@ -1,0 +1,127 @@
+/* src/components/MealPlanner/MealPlanner.css */
+.meal-planner {
+    padding: 40px;
+    margin-top: 120px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.meal-planner h2 {
+    color: #FF8E0C;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.clear-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF8E0C;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+    background-color: #e07c00;
+}
+
+.days-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: darkolivegreen;
+    margin-bottom: 40px;
+}
+
+.day-section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.day-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.day-section h3 {
+    margin-bottom: 15px;
+    color: #2e2e2e;
+    font-size: 1.4rem;
+}
+
+.meal-list {
+    margin-bottom: 15px;
+}
+
+.meal-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.meal-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.remove-button {
+    padding: 5px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #c0392b;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #FF8E0C;
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e07c00;
+}
+
+@media (max-width: 768px) {
+    .day-section {
+        width: 100%;
+    }
+}
